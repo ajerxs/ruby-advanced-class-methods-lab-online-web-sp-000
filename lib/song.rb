@@ -10,4 +10,10 @@ class Song
     self.class.all << self
   end
 
+  def self.create(name)
+    @name = name
+    @@all << self
+    self
+  end
+
 end
